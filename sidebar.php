@@ -43,5 +43,27 @@
 			<?php } ?>
 		<?php } ?>
 	</nav>
-
+	
+	
+		<?php
+		if( have_rows('sidebar_buttons') ):?>
+		<div class="sidebar-buttons">
+			<ul>
+				<?php
+				while ( have_rows('sidebar_buttons') ) : the_row(); ?>
+					<?php 
+					$link = get_sub_field('buttons');
+					$link_url = $link['url'];
+					$link_title = $link['title'];
+					$link_target = $link['target'] ? $link['target'] : '_self';
+					?>
+					<li><a class="button" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><?php echo esc_html( $link_title ); ?></a></li>
+				<?php endwhile; ?>
+			</ul>
+		</div>
+		<?php else :
+			// no rows found
+		endif;
+		?>
+	
 </aside>

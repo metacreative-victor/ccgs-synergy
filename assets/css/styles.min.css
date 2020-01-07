@@ -265,6 +265,10 @@ table.calculator tr td {
 	border: none;
 }
 
+table.calculator {
+	width: 100% !important;
+}
+
 body.page-id-2690063 article .mobile-tables table {
 	max-width: 450px !important;
 }
@@ -299,8 +303,68 @@ header#header div#google_language_translator select {
     color: #FFF;
 }
 
+/* TABLET and MOBILE VIEW */
 @media only screen and (max-width:1024px) {
 	header#header div#google_language_translator {
 		display: none;
 	}
+	.mobile-tables table {
+		width: 100% !important;
+	}
 }
+
+/* SIDEBAR BUTTONS */
+div.sidebar-buttons {
+	margin: 10px 0;
+}
+
+div.sidebar-buttons ul {
+	list-style: none;
+	margin-left: 10px;
+}
+
+div.sidebar-buttons a {
+	background: #03315d;
+	color: #FFF;
+	display: block;
+	font-weight:bold;
+	margin: 15px 0;
+	padding: 15px 35px;
+	position: relative;
+	text-align: center;
+	transition: all .2s ease-out 0s;
+}
+
+div.sidebar-buttons a:before {
+	background: #ffca38;
+	content: " ";
+	position: absolute;
+	left: 0;
+	width: 8px;
+	height: 100%;
+    top: 0;
+}
+
+div.sidebar-buttons a:hover {
+	background: #004d95;
+	text-decoration: none;
+}
+
+@media (max-width: 1000px) {
+	div.sidebar-buttons ul {
+		margin: 0;
+		padding: 0;
+	}
+}
+
+.mobile-tables table {
+	min-width: 50% !important;
+	width: auto;
+}
+
+/* High Achiever 2019 page */
+body.page-id-2714719 table td {
+	border: none !important;
+}
+
+
