@@ -1,0 +1,43 @@
+.videos-page {
+  text-align: center;
+  h1 {
+
+  }
+  h2 {
+
+  }
+
+  .video-list {
+    margin-top: 30px;
+    .video {
+      text-align: left;
+      padding-bottom: 60px;
+      h3 {
+        display: inline-block;
+        &:after {
+          content: '';
+          display: block;
+          border-top:solid 2px $yellow;
+          width:30px;
+          margin-top: 15px;
+          margin-bottom: 10px;
+        }
+      }
+      .iframe-wrapper{
+        position: relative;
+      	padding-bottom: 56.25%; /* 16:9 */
+      	//padding-top: 25px;
+      	height: 0;
+        width:100%;
+        iframe {
+          position: absolute;
+        	top: 0;
+        	left: 0;
+        	width: 100%;
+        	height: 100%;
+        }
+      }
+
+    }
+  }
+}

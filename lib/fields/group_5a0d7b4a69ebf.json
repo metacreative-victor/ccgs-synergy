@@ -1,0 +1,45 @@
+{
+    "key": "group_5a0d7b4a69ebf",
+    "title": "CCGS World",
+    "fields": [
+        {
+            "key": "field_5a0d7b51ffb89",
+            "label": "Featured",
+            "name": "_is_featured",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "news"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "side",
+    "style": "default",
+    "label_placement": "left",
+    "instruction_placement": "field",
+    "hide_on_screen": [
+        "permalink"
+    ],
+    "active": 1,
+    "description": "",
+    "modified": 1524466613
+}

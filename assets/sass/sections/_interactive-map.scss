@@ -1,0 +1,76 @@
+/* INTERACTIVE MAP */
+#chirstchurch {
+	width:100%;
+}
+
+.map-tooltip{
+	font-family: Verdana, Helvetica, sans-serif;
+	background-color: #fff;
+	opacity: 0.9;
+	padding: 10px 20px;
+	max-width: 200px;
+	margin-top:200px;
+}
+.map-tooltip h3{
+	font-family: Verdana, Helvetica, sans-serif !important;
+}
+.container {
+	.interactive-map {
+		width:75%;
+		float:right;
+	  margin-bottom: 30px;
+	}
+}
+
+.map-items{
+	width:23%;
+	margin-right: 2%;
+  margin-bottom: 30px;
+	float:left;
+}
+.map-items h3{
+	text-align: right;
+}
+.map-items ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	text-align: right;
+}
+@media only screen and (max-width: 767px) {
+	.interactive-map {
+		width:100%;
+		float:none;
+        margin-bottom: 0px;
+	}
+	.map-items{
+		width:100%;
+		margin-right:0;
+		float:none;
+	}
+	.map-items h3{
+		text-align: center;
+	}
+	.map-items img{
+		display: none;
+	}
+	.map-items ul {
+      float: left;
+		text-align: center;
+		margin: 20px 0;
+	}
+	.map-items ul li {
+		display:inline;
+		float:left;
+		width: 100%;
+	}
+	.map-items ul li a {
+		display:block;
+		width: 100%;
+		padding: 2% 0;
+	}
+}
+
+.search-wrapper {
+	margin-bottom: 20px;
+}

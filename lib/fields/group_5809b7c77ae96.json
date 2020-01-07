@@ -1,0 +1,52 @@
+{
+    "key": "group_5809b7c77ae96",
+    "title": "Online Payments",
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "online_payments"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1519286635,
+    "fields": [
+        {
+            "key": "field_5809b7df42ee2",
+            "label": "Payment URL",
+            "name": "payment_url",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "https:\/\/quickweb.westpac.com.au\/OnlinePaymentServlet2?communityCode=ISQWEB&currencyCode=AUD&supplierBusinessCode=CCGS": "Landing page",
+                "https:\/\/quickweb.westpac.com.au\/OnlinePaymentServlet2?communityCode=ISQWEB&currencyCode=AUD&supplierBusinessCode=CCGS&paymentType=DONATIONPAYMENTS": "Donations",
+                "https:\/\/quickweb.westpac.com.au\/OnlinePaymentServlet2?communityCode=ISQWEB&currencyCode=AUD&supplierBusinessCode=CCGS&paymentType=EVENTPAYMENTS": "Events",
+                "https:\/\/quickweb.westpac.com.au\/OnlinePaymentServlet2?communityCode=ISQWEB&currencyCode=AUD&supplierBusinessCode=CCGS&paymentType=ENROLMENTPAYMENTS": "Enrolments",
+                "https:\/\/quickweb.westpac.com.au\/OnlinePaymentServlet2?communityCode=ISQWEB&currencyCode=AUD&supplierBusinessCode=CCGS&paymentType=SCHOOLFEEPAYMENTS": "School Fees"
+            },
+            "default_value": [],
+            "allow_null": 1,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        }
+    ]
+}

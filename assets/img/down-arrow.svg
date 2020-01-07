@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="27px" height="14px" viewBox="0 0 27 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.1 (44463) - http://www.bohemiancoding.com/sketch -->
+    <title>down-arrow</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="CCGS_Homepage_Update_03_08_2017" transform="translate(-787.000000, -606.000000)" fill="#FFFFFF">
+            <path d="M813.723742,606.270531 C813.35161,605.909823 812.746895,605.909823 812.374763,606.270531 L800.51305,617.79066 L788.628078,606.270531 C788.255946,605.909823 787.651231,605.909823 787.279099,606.270531 C786.906967,606.63124 786.906967,607.217391 787.279099,607.5781 L799.815302,619.729469 C800.001368,619.909823 800.233951,620 800.489791,620 C800.722374,620 800.978215,619.909823 801.164281,619.729469 L813.700484,607.5781 C814.095874,607.217391 814.095874,606.63124 813.723742,606.270531 L813.723742,606.270531 Z" id="down-arrow"></path>
+        </g>
+    </g>
+</svg>

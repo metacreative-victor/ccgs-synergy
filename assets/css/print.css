@@ -1,0 +1,109 @@
+body{
+	color:#000!important;
+	background:#fff!important;
+}
+#header{
+	display: none;
+}
+.topbar, .nav-block, .breadcrumb, .sidenav, #footer, .features-block, .notices, .addnav, .latest-news, .quick-links, .slideshow .pagination, .post .more{
+	display:none!important;
+}
+.category-ccgs-world .notices {
+  display: block !important;
+}
+.category-ccgs-world .notices .children li .slide-popup {
+  border: none;
+  height: auto !important;
+  left: auto !important;
+  padding: 0;
+  position: relative;
+  top: auto;
+  width: 100% !important;
+}
+.category-ccgs-world .slide-popup-close {
+  display: none;
+}
+.category-ccgs-world .slide-popup-inner {
+  height: auto !important;
+}
+.category-ccgs-world .notices h2,
+.category-ccgs-world .notices li a,
+.category-ccgs-world .notices #sidebar-search {
+  display: none !important;
+}
+.category-ccgs-world .container .twocolumns,
+.category-ccgs-world .newsfeed-wrap {
+  display: none !important;
+}
+.logo{
+	position:static;
+	text-align:center;
+	margin:0;
+}
+.logo img{
+	display:block;
+	margin:0 auto;
+}
+.twocolumns, #sidebar, .inner #main, #main, #content{
+	float:none!important;
+	width:100%;
+	margin:0;
+	padding:0;
+	max-width:100%;
+}
+.newsletter .twocolumns {
+    float: left !important;
+    width: 74.976% !important;
+    max-width: 74.976% !important;
+}
+.newsletter #content {
+    float: left !important;
+    width: 66.2% !important;
+    max-width: 66.2% !important;
+}
+.newsletter .updates {
+    float: right !important;
+    width: 31.6% !important;
+    max-width: 31.6% !important;
+}
+.newsletter .aside {
+    width: 23.6347% !important;
+    max-width: 23.6347% !important;
+    float: right !important;
+}
+.newsletter .aside img, .newsletter .updates img {
+	width: 100% !important;
+	max-width: 100% !important;
+}
+.intro-box .textbox{
+	width:75%;
+	margin:0;
+	padding:0;
+}
+.intro-box .images-col{
+	width:23%;
+	margin:0 0 0 2%;
+}
+.intro-box .images-col .img-box img{
+	height:auto;
+	max-width:100%;
+}
+.intro-box, .container, .events, #main{
+	overflow:visible;
+}
+.post header,
+.newsletter .updates h2,
+.events h2{
+	padding:0;
+	margin:0 0 10px;
+	border:none;
+}
+.img-content,
+.post .img-frame{
+	margin:0 3% 0 0;
+}
+.events ul,
+.post ul li,
+.header-frame{
+	padding:0;
+}

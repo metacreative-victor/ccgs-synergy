@@ -1,0 +1,15 @@
+.search {
+  .search-wrapper {
+    margin-bottom: 50px;
+  }
+  .result {
+    border-top:dashed $grey 1px;
+    padding-top: 20px;
+    h3 {
+      span {
+        color:$grey;
+        font-weight: 100;
+      }
+    }
+  }
+}

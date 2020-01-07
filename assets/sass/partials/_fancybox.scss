@@ -1,0 +1,35 @@
+@page {
+  size: auto;
+  margin: 10mm 10mm 10mm 10mm;
+}
+
+.fancybox-inline {
+  max-width: 740px;
+  max-height: 80vh;
+  .header {
+    display: none;
+    background:$blue;
+    text-align: center;
+    padding: 15px;
+    margin-bottom: 10px;
+    img {
+      height:50px;
+    }
+    @media print {
+      display: block;
+    }
+  }
+
+  a.print {
+    background: url(../images/printer.gif) no-repeat left top;
+    cursor: pointer;
+    display: block;
+    float: right;
+    font-size: 0;
+    height: 16px;
+    width: 16px;
+    @media print {
+      display: none;
+    }
+  }
+}

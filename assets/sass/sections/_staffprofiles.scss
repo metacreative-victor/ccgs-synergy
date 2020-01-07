@@ -1,0 +1,124 @@
+.background-cover {
+  display: none;
+  background:rgba(0,0,0,0.6);
+  position: fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  z-index: 999;
+}
+
+.profile-wrap {
+
+  .profile {
+    @include span-columns(3);
+    @include omega(4n);
+
+
+
+    @include media($mobile){
+      @include span-columns(6);
+      @include omega(2n);
+    }
+
+    margin-bottom: 20px;
+    button {
+      width:100%;
+      border:none;
+      padding: 0;
+      cursor:pointer;
+      outline:none;
+      .profile-image {
+        width:100%;
+        height:350px;
+        background-size: cover;
+        background-position: center;
+        @include media($tablet) {
+          height:250px;
+        }
+        @include media($mobile) {
+          height:200px;
+        }
+      }
+
+      .profile-name {
+        background-color: $blue;
+        padding: 20px 20px;
+        color:$white;
+        font-size: 1.9em;
+        @include media($tablet) {
+          font-size: 1.3em;
+        }
+        @include media($mobile) {
+          font-size: 1.2em;
+        }
+      }
+      &:hover {
+        .profile-name {
+          background-color:$yellow;
+        }
+      }
+    }
+
+    .profile-window {
+      display: none;
+      background:$white;
+      position:fixed;
+      top:50%;
+      left:50%;
+      width:50%;
+      height:50%;
+      max-height: 600px;
+      max-width:960px;
+      z-index: 999;
+      @include media($mobile) {
+        width:90%;
+        height:80%;
+        padding:0;
+      }
+
+
+      .close-profile-window {
+        position: absolute;
+        right:-15px;
+        top:-15px;
+        background:$white;
+        width:auto;
+        width:40px;
+        line-height: 25px;
+        height:40px;
+        text-align: center;
+        vertical-align: middle;
+        border-radius: 50%;
+        font-size:1.5em;
+        cursor:pointer;
+      }
+
+      .profile-text, .text-image {
+
+        overflow-y: scroll;
+        max-height: 100%;
+        display: inline-block;
+        float: left;
+      }
+      .text-image {
+        height: 100%;
+        width:40%;
+        text-align: right;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border:solid 20px $white;
+        @include media($mobile) {
+          max-height: 200px;
+        }
+      }
+      .profile-text {
+        width:60%;
+        padding: 30px 30px 30px 10px;
+      }
+
+    }
+  }
+}

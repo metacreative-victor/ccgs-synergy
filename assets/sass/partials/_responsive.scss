@@ -1,0 +1,227 @@
+@media (max-width: 1240px) {
+  body.category-news,
+  body.section-category-news,
+  body.section-christchurchschool-category-news,
+  body.archive.category, {
+    .news_panel {
+      width: 20%;
+    }
+  }
+}
+/*
+@media (max-width: 1024px) {
+  // mobile menu shown
+  #header {
+	div.header-holder {
+      div.header-frame {
+        div.nav-block {
+          width: 100%;
+          overflow: visible;
+          margin: 0;
+          .opener{
+            display: block;
+            z-index: 99999;
+          }
+          #nav {
+            &.js-slide-hidden { position:absolute !important; }
+            padding-bottom: 30px;
+            ul,
+            ul:first-child {
+              width: 100%;
+              float: none;
+              overflow: hidden;
+              text-align: left !important;
+              li {
+                display: block;
+                background: none;
+                padding: 5px 10px;
+                line-height: 21px;
+                &:hover {
+                  background: none;
+                  .sub-menu { display: none; }
+                }
+                a { display: inline-block; border: none; }
+              }
+            }
+            .sub-menu {
+              background: rgb(254, 200, 73);
+              background: rgba(254, 200, 73, 0.9);
+              width: 100%;
+              height: auto;
+              position: relative;
+              top: 0;
+              left: -15px;
+              z-index: 99999;
+              padding: 15px;
+              display: none;
+              li {
+                width: 100%;
+                float: none;
+                line-height: 21px;
+                a {
+                  color: #000;
+                  font-weight: bold;
+                  text-transform: none;
+                  text-align: left;
+                  border: none;
+                  &:hover {
+                    color: #fff;
+                  }
+                }
+              }
+              .sub-menu {
+                background: none;
+                position: relative;
+                top: 0;
+                padding: 0;
+                li {
+                  float: none;
+                  width: 100%;
+                  line-height: 21px;
+                  padding: 0px;
+                  a {
+                    font-weight: 100;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+*/
+@media (max-width: 768px) {
+  // tablet sizes
+  body.category-news,
+  body.section-category-news,
+  body.section-christchurchschool-category-news,
+  body.archive.category {
+    .news_panel {
+      width: 42%;
+    }
+  }
+  .news_panel {
+    width: 48%;
+  }
+  #main #sidebar {
+    padding-right: 20px;
+  }
+  #main .onecolumn .gallery {
+    height: auto !important;
+    float: none;
+    margin-bottom: 30px;
+    .gallery-item {
+      float: none;
+      margin-right: 0px !important;
+    }
+  }
+  #main .twocolumns {
+    &.has_third_column article {
+      width: 100%;
+    }
+    .images-col {
+      width: 100%;
+      padding-top: 30px;
+      padding-left: 0px;
+    }
+  }
+  body.category-ccgs-world {
+    #main .twocolumns.has_third_column .ccgs_world_wrap {
+      width: 100%;
+    }
+  }
+
+  body.home section.cta-container div.sub-items .item,
+  .sub-items .item {
+    float: left;
+    width: 98%;
+    margin: 1%;
+  }
+  #footer .footer-bottom .holder section {
+    &.left-col {
+      width: 100%;
+      padding: 30px 30px 30px 30px;
+      box-sizing: border-box;
+      text-align: left;
+      p.copyright {
+        margin-top: 20px;
+      }
+    }
+    &.right-col {
+      text-align: left;
+      width: 100%;
+      padding: 30px 30px 30px 30px;
+      box-sizing: border-box;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  // everything goes to 100% width
+  body.category-news,
+  body.section-category-news,
+  body.section-christchurchschool-category-news,
+  body.archive.category {
+    .news_panel {
+      width: 90%;
+      margin: 0px 0px 20px 0px;
+    }
+  }
+  .news_panel {
+    width: 84%;
+    margin: 0px 8% 20px 8%;
+  }
+  #main #sidebar {
+    width: 100%;
+    margin-top: 20px;
+    border-top: dotted 1px #CCCCCC;
+    padding: 20px 20px 20px 20px;
+    .sidenav ul {
+      text-align: left;
+    }
+  }
+  #main .twocolumns {
+    width: 100%;
+    //padding: 30px 20px 0px 20px;
+    margin-bottom: 0px;
+  }
+  #main #news_categories > ul {
+    padding: 30px 20px 0px 20px;
+    & > li {
+      width: 100%;
+      padding: 0px 0px 20px 0px;
+    }
+  }
+  section.video-introduction {
+  }
+  body.home section.featured-news {
+    padding-top: 30px;
+  }
+  .sub-items .item {
+    width: 94%;
+    margin: 3%;
+  }
+  #footer .footer-bottom .holder section {
+    /*&.left-col {
+      ul {
+        li {
+          display: block;
+          padding-bottom: 8px;
+        }
+      }
+    }*/
+    &.right-col {
+      ul {
+        li {
+          line-height: 20px;
+          span.fa-map-marker {
+            float: left;
+            padding-bottom: 20px;
+          }
+        }
+      }
+    }
+  }
+}

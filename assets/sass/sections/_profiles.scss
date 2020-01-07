@@ -1,0 +1,43 @@
+.section_profiles {
+  display: inline-block;
+  width:100%;
+  .profile_list {
+    .single_profile {
+      display: inline-block;
+      width:100%;
+      clear: both;
+      margin-bottom: 20px;
+      .image {
+        display: block;
+        float:left;
+        width: 20%;
+        margin-bottom: 10px;
+        @include media($mobile){
+          float:none;
+          width:100%;
+        }
+        .wrap {
+          max-width: 150px;
+          margin: inherit;
+          padding-right: 10px;
+        }
+        .inner {
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-color: #eee;
+          width:100%;
+          padding-top: 134%; /* 1:1 Aspect Ratio */
+        }
+      }
+      .content {
+        display: block;
+        float:left;
+        width: 80%;
+        @include media($mobile){
+          float:none;
+          width:100%;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,193 @@
+@mixin wrap {
+  @include outer-container(1024px);
+}
+
+@mixin wrap-large {
+  @include outer-container(1200px);
+}
+
+@mixin wrap-small {
+  @include outer-container(640px);
+}
+
+@mixin paddit {
+  padding-left: 40px;
+  padding-right: 40px;
+  @include media($mobile) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@mixin paddit-small {
+  padding-left: 20px;
+  padding-right: 20px;
+  @include media($mobile) {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@mixin sectionit {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @include media($mobile) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+@mixin sectionit-small {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  @include media($mobile) {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+@mixin before_and_after {
+  content:'';
+  width:25%;
+  height:100%;
+  position: absolute;
+  top:0;
+  @include media($mobile) {
+    display: none;
+  }
+}
+
+@mixin action($icon) {
+  color:$white !important;
+  border:none;
+  padding: 10px 20px;
+  font-size:1em;
+  font-weight: 600;
+  cursor:pointer;
+  margin:4px;
+  text-decoration: none;
+  display: inline-block;
+  text-transform: uppercase;
+  @include transition(all 0.1s ease-in-out);
+  @include  media($mobile) {
+    font-size: 0.7em;
+  }
+  &:after {
+    font-family: 'FontAwesome';
+    margin-left: 10px;
+    content:$icon;
+    opacity: 0.6;
+  }
+  &:hover {
+    background:$purple;
+    &:after {
+      opacity: 1;
+    }
+  }
+}
+
+@mixin icon($icon){
+  content: $icon;
+  font-family: 'FontAwesome';
+}
+
+@mixin quote {
+  padding-left:20px;
+  &:before, &:after {
+    position: absolute;
+    display: inline;
+    content:'"';
+    font-size: 1.5em;
+    font-weight: 600;
+    font-style: italic;
+    padding-top:5px;
+    color:$pink_two;
+  }
+  &:before {
+
+    margin-left: -25px;
+  }
+  &:after {
+    margin-left:5px;
+  }
+}
+
+@mixin vertical-align {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+@mixin one {
+  @include span-columns(12);
+  @include omega();
+}
+
+@mixin two {
+  @include span-columns(6);
+  @include omega(2n);
+
+  @include media($mobile) {
+    @include span-columns(12);
+    @include omega();
+  }
+}
+
+@mixin two_thirds {
+  @include span-columns(8);
+  @include omega(2n);
+
+  @include media($mobile) {
+    @include span-columns(12);
+    @include omega();
+  }
+}
+
+@mixin three {
+  @include span-columns(4);
+  @include omega(3n);
+
+  @include media($tablet) {
+    @include span-columns(6);
+    @include omega(2n);
+  }
+
+  @include media($mobile) {
+    @include span-columns(12);
+    @include omega();
+  }
+}
+
+@mixin four {
+  @include span-columns(3);
+  @include omega(4n);
+
+  @include media($tablet) {
+    @include span-columns(6);
+    @include omega(2n);
+  }
+
+  @include media($mobile) {
+    @include omega();
+    @include span-columns(12);
+    @include omega();
+  }
+}
+
+@mixin three_fourths {
+  @include span-columns(9);
+  @include omega(2n);
+
+  @include media($tablet) {
+    @include span-columns(6);
+    @include omega(2n);
+  }
+
+  @include media($mobile) {
+    @include omega();
+    @include span-columns(12);
+    @include omega();
+  }
+}

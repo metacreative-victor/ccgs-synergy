@@ -1,0 +1,114 @@
+
+@keyframes fadebottom {
+  0% {
+    opacity: 1;
+    transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -o-transform: translateY(0px);
+  }
+  25% {
+    opacity: 0;
+    transform: translateY(20px);
+    -moz-transform: translateY(20px);
+    -o-transform: translateY(20px);
+  }
+  30% {
+    opacity: 0;
+    transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -o-transform: translateY(0px);
+  }
+  45% {
+    opacity: 1;
+    transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -o-transform: translateY(0px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -o-transform: translateY(0px);
+  }
+}
+
+/*
+Announcements bar
+*/
+
+@keyframes shake {
+  0% {
+    transform: rotateZ(0); }
+  10% {
+    transform: rotateZ(-50deg); }
+  20% {
+    transform: rotateZ(25deg); }
+  30% {
+    transform: rotateZ(-16.66667deg); }
+  40% {
+    transform: rotateZ(12.5deg); }
+  50% {
+    transform: rotateZ(-10deg); }
+  60% {
+    transform: rotateZ(8.33333deg); }
+  70% {
+    transform: rotateZ(-7.14286deg); }
+  80% {
+    transform: rotateZ(6.25deg); }
+  90% {
+    transform: rotateZ(-5.55556deg); }
+  100% {
+    transform: rotateZ(0); }
+}
+
+.announcements_bar {
+  position: relative;
+  .announcements {
+    //display: none;
+    font-size: 1.2em;
+    background: $yellow;
+    color:$white;
+    padding: 10px 15px;
+    position: absolute;
+    right:0;
+    z-index: 99;
+    -webkit-box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.2);
+    @include media($mobile) {
+      font-size: 1em;
+      position: relative;
+    }
+    .fa-bullhorn {
+      -ms-transform: rotate(-30deg); /* IE 9 */
+      -webkit-transform: rotate(-30deg); /* Chrome, Safari, Opera */
+      transform: rotate(-30deg);
+      border:rgba(254,254,254,0.4) 1px solid;
+      border-radius: 50%;
+      width:35px;
+      height:35px;
+      line-height: 35px;
+      text-align: center;
+    }
+    a {
+      border:rgba(254,254,254,0.4) 1px solid;
+      color:$white;
+      padding: 10px 15px;
+      display: inline-block;
+      border-radius: 4px;
+      &:after {
+        content:'\f0da';
+        font-family: "FontAwesome";
+        margin-left: 10px;
+        display: inline;
+        color:rgba(0,0,0,0.4)
+      }
+      &:hover {
+        text-decoration: none;
+        color:rgba(0,0,0,0.4);
+      }
+    }
+    &:hover .fa-bullhorn {
+      animation: shake 1200ms;
+    }
+  }
+}

@@ -1,0 +1,160 @@
+.sidenav {
+  .current-cat, .current-cat-parent {
+    a {
+      color:$yellow !important;
+    }
+    .children {
+      display: block;
+    }
+  }
+  .children {
+    padding-top: 16px !important;
+    display: none;
+    a {
+      font-size: 0.8em !important;
+      color:$grey !important;
+    }
+  }
+}
+
+.online_payment_list {
+  h1 {
+    padding-bottom: 15px;
+  }
+  article {
+    border-bottom:dashed $grey 1px;
+    padding:0 0 10px 0;
+    margin-bottom: 20px;
+
+    .wp-post-image {
+      float:right;
+      margin: 0 0 10px 20px;
+
+      max-width: 120px;
+      height: auto;
+    }
+    h2 {
+      margin-bottom: 0.5em !important;
+    }
+    .meta {
+      font-weight: bold;
+      margin-bottom: 1em;
+      font-size: 0.7em;
+      color:$grey;
+      span {
+        margin:0 4px;
+      }
+    }
+
+    .read_more {
+      transition: all 0.3s ease;
+      -webkit-transition: all 0.3s ease;
+      clear:both;
+      text-align: right;
+      float:right;
+      a {
+        text-decoration: none;
+      }
+      .np_more {
+        color: $bluelight;
+        font-size: 11px;
+        b {
+          font-weight: normal;
+          text-transform: uppercase;
+          opacity:0;
+          transition: all 0.3s ease;
+          -webkit-transition: all 0.3s ease;
+        }
+        &:after {
+          position: relative;
+          content: "\f055";
+          font-family: "FontAwesome";
+          color: $yellow;
+          font-size: 20px;
+          padding-left: 7px;
+          top: 2px;
+        }
+      }
+    }
+
+    &:hover {
+      .read_more{
+        color:$yellow;
+        b {
+          opacity: 1;
+        }
+      }
+    }
+
+  }
+
+}
+
+.pagination {
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    li {
+      a {
+        border:solid 1px $bluelight;
+        padding: 10px 15px;
+        display: inline-block;
+        border-radius: 4px;
+        &:hover {
+          color:$yellow;
+          text-decoration: none;
+          border:solid 1px $yellow;
+        }
+      }
+    }
+  }
+
+
+}
+
+.single_online_payment {
+  .meta {
+    font-weight: bold;
+    margin-bottom: 1em;
+    font-size: 0.7em;
+    color:$grey;
+    span {
+      margin:0 4px;
+    }
+  }
+  .note {
+    font-size: 0.7em;
+    color:#666;
+  }
+  .image {
+    float:right;
+    margin-left: 20px;
+    @include media($mobile){
+      float: none;
+    }
+  }
+}
+
+.payment_button {
+  border:solid $grey 1px;
+  padding: 15px;
+  max-width: 620px;
+  margin-bottom: 5px;
+  a {
+    background:$bluelight;
+    padding: 8px 15px;
+    color:#fff;
+    text-transform: uppercase;
+    display: inline-block;
+    border-radius: 4px;
+    &:hover {
+      background: $blue;
+      text-decoration: none;
+    }
+  }
+  .credit {
+    width:80px;
+    float: right;
+  }
+}

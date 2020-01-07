@@ -1,0 +1,156 @@
+/*@media print {
+  body, html{
+  	color:#000!important;
+  	background:#fff!important;
+  }
+
+    .topbar, .nav-block, .breadcrumb, .sidenav, #footer, .features-block, .notices, .addnav, .latest-news, .quick-links, .slideshow .pagination, .post .more{
+    	//display:none!important;
+    }
+
+    //Event window
+    .category-ccgs-world {
+      #nav_search,
+      .nav-block,
+      .breadcrumb,
+      #footer {
+        display: none !important;
+      }
+      #header {
+        .header-holder{
+          .header-frame{
+            .logo{
+              float: none;
+            	text-align:center;
+              width:100% !important;
+              a {
+                display: inline;
+                img {
+                  display: inline;
+                  height:94px !important;
+                  opacity: 1 !important;
+                }
+              }
+            }
+          }
+        }
+      }
+      #main #sidebar {
+        width:100%;
+      }
+      #wrapper {
+        -webkit-box-shadow: none;
+      	-moz-box-shadow: none;
+      	box-shadow:none;
+      }
+      .notices {
+        display: block !important;
+
+        .slide-popup {
+          border: none;
+          height: auto !important;
+          left: auto !important;
+          padding: 0;
+          position: relative;
+          top: auto;
+          width: 100% !important;
+        }
+
+        h2, li a, #sidebar-search {
+          display: none !important;
+        }
+      }
+
+      .slide-popup-close {
+        display: none;
+      }
+
+      .slide-popup-inner {
+        height: auto !important;
+      }
+
+      .container {
+        .twocolumns, .newsfeed-wrap {
+          display: none !important;
+        }
+      }
+
+
+      .twocolumns, #sidebar, .inner #main, #main, #content{
+      	float:none!important;
+      	width:100%;
+      	margin:0;
+      	padding:0;
+      	max-width:100%;
+      }
+      .newsletter .twocolumns {
+          float: left !important;
+          width: 74.976% !important;
+          max-width: 74.976% !important;
+      }
+      .newsletter #content {
+          float: left !important;
+          width: 66.2% !important;
+          max-width: 66.2% !important;
+      }
+      .newsletter .updates {
+          float: right !important;
+          width: 31.6% !important;
+          max-width: 31.6% !important;
+      }
+      .newsletter .aside {
+          width: 23.6347% !important;
+          max-width: 23.6347% !important;
+          float: right !important;
+      }
+      .newsletter .aside img, .newsletter .updates img {
+      	width: 100% !important;
+      	max-width: 100% !important;
+      }
+      .intro-box .textbox{
+      	width:75%;
+      	margin:0;
+      	padding:0;
+      }
+      .intro-box .images-col{
+      	width:23%;
+      	margin:0 0 0 2%;
+      }
+      .intro-box .images-col .img-box img{
+      	height:auto;
+      	max-width:100%;
+      }
+      .intro-box, .container, .events, #main{
+      	overflow:visible;
+      }
+      .post header,
+      .newsletter .updates h2,
+      .events h2{
+      	padding:0;
+      	margin:0 0 10px;
+      	border:none;
+      }
+      .img-content,
+      .post .img-frame{
+      	margin:0 3% 0 0;
+      }
+      .events ul,
+      .post ul li,
+      .header-frame{
+      	padding:0;
+      }
+    }
+
+}
+*/
+@media print {
+  body, html{
+  	color:#000!important;
+  	background:#fff!important;
+  }
+
+    .topbar, .nav-block, .breadcrumb, .sidenav, #footer, .features-block, .notices, .addnav, .latest-news, .quick-links, .slideshow .pagination, .post .more{
+    	display:none!important;
+    }
+
+}

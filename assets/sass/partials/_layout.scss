@@ -1,0 +1,119 @@
+.paddit {
+  @include paddit;
+}
+
+.sectionit {
+  padding-top:35px;
+  padding-bottom: 35px;
+}
+
+.wrap {
+  @include wrap;
+}
+
+.wrap-large {
+  @include wrap-large;
+}
+
+.wrap-small {
+  @include wrap-small;
+}
+
+
+@mixin one {
+  @include span-columns(12);
+  @include omega();
+}
+
+@mixin two {
+  @include span-columns(6);
+  @include omega(2n);
+
+  @include media($mobile) {
+    @include span-columns(12);
+    @include omega();
+  }
+}
+
+@mixin two_thirds {
+  @include span-columns(8);
+  @include omega(2n);
+
+  @include media($mobile) {
+    @include span-columns(12);
+    @include omega();
+  }
+}
+
+@mixin three {
+  @include span-columns(4);
+  @include omega(3n);
+
+  @include media($tablet) {
+    @include span-columns(6);
+    @include omega(2n);
+  }
+
+  @include media($mobile) {
+    @include span-columns(12);
+    @include omega();
+  }
+}
+
+@mixin four {
+  @include span-columns(3);
+  @include omega(4n);
+
+  @include media($tablet) {
+    @include span-columns(6);
+    @include omega(2n);
+  }
+
+  @include media($mobile) {
+    @include omega();
+    @include span-columns(12);
+    @include omega();
+  }
+}
+
+@mixin three_fourths {
+  @include span-columns(9);
+  @include omega(2n);
+
+  @include media($tablet) {
+    @include span-columns(6);
+    @include omega(2n);
+  }
+
+  @include media($mobile) {
+    @include omega();
+    @include span-columns(12);
+    @include omega();
+  }
+}
+
+
+.one {
+  @include one;
+}
+
+
+.two {
+  @include two;
+}
+
+.two_thirds, .two_three {
+  @include two_thirds;
+}
+
+.three {
+  @include three;
+}
+
+.four {
+  @include four
+}
+
+.three_four, .three_fourth {
+  @include three_fourths;
+}

@@ -1,0 +1,62 @@
+/* ------------------------------------------------------
+  Forms
+------------------------------------------------------ */
+input[type="text"],
+input[type="search"],
+input[type="password"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="tel"],
+input[type="file"],
+textarea,
+select {
+	padding: 5px;
+	background: #FFF;
+	border: 1px solid #DDD;
+	line-height: normal;
+  font-size: 16px;
+	outline: none;
+	-webkit-appearance: none;
+	appearance: none;
+	&:focus {
+		outline: none;
+	}
+}
+
+input[type="file"] {
+	&:hover {
+		cursor: pointer;
+	}
+}
+
+input[type="search"] {
+	width: auto;
+	display: inline-block;
+}
+
+select[multiple],
+select[size] {
+	height: auto;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+	width: auto;
+	display: inline-block;
+}
+
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button {
+
+}
+
+
+@include media($tablet) {
+
+}
+@include media($mobile) {
+
+}

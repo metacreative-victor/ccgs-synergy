@@ -1,0 +1,65 @@
+div.our-approach {
+  margin: 0 0 15px 0;
+  padding: 0 40px 20px;
+  @include media ($mobile){
+    padding: 0 20px 20px;
+  }
+
+  ul {
+    margin: 0;
+  }
+
+  img.white-ribbon {
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    top: 0;
+    text-align: center;
+    vertical-align: top;
+  }
+
+  h3 {
+    color: #132a60;
+    font-size: 25px;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  h4 {
+    font-size: 15px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+  }
+
+  &#inclusive {
+    background:#ffcb27;
+  }
+
+  &#challenging {
+    background:#e60f48;
+
+    h3 {
+      color: #FFF;
+    }
+    h4 {
+      color: #FFF;
+    }
+    p, ul, ul li {
+      color: #FFF;
+    }
+  }
+
+  &#targeted {
+    background:#03315d;
+
+    h3, h4 {
+      color: #ffca38;
+    }
+    p, ul, ul li {
+      color: #FFF;
+    }
+  }
+
+}

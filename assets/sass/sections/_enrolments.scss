@@ -1,0 +1,91 @@
+.enrolments_wrapper {
+  position: relative;
+
+  .enrolments {
+    width:70%;
+    float:right;
+    @include media($mobile) {
+      width:100%;
+      position: relative;
+      float: none;
+    }
+  }
+
+  .field_sublabel_below {
+    padding-top: 40px;
+  }
+  .gsection {
+  //  position: absolute;
+    margin: 0 0 40px 0 !important;
+    padding: 60px 0 2px 0 !important;
+
+
+    h2 {
+      display: inline-block;
+      position: absolute;
+      left:0;
+      margin-top: -13px !important;
+      //width:calc(30%-30px);
+      width:27%;
+      @include media($mobile) {
+        margin:0;
+        padding-bottom: 20px !important;
+        width:100%;
+        position: relative;
+      }
+    }
+  }
+
+  .gfield_html {
+    ul {
+      li {
+        list-style: circle;
+      }
+    }
+  }
+
+  img.ui-datepicker-trigger {
+    vertical-align: middle;
+  }
+
+  hr {
+    border:none;
+    border-bottom: solid 1px #ddd;
+    padding: 20px 0;
+    margin: 40px 0;
+  }
+
+  hr.compact {
+    padding:0 !important;
+    margin:20px 0;
+  }
+
+  .gfield_checkbox, .gfield_radio {
+    li {
+      display: inline-block;
+      vertical-align: middle;
+      margin:0 20px 8px 0 !important;
+      label {
+        max-width: none;
+      }
+    }
+  }
+
+  .declaration {
+    li {
+      width:100%;
+    }
+    label {
+      max-width: 50% !important;
+      vertical-align: top !important;
+    }
+    .gfield_label {
+      display:none !important;
+    }
+  }
+
+  .gfield_description {
+    padding: 5px 0 0 0 !important;
+    line-height: 160%;
+  }
+}

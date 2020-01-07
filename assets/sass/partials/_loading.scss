@@ -1,0 +1,101 @@
+@keyframes spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}
+@keyframes fadeOutLoad {
+  from {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes fadeInLoad {
+  from {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  to {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@keyframes fx {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(2);
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(3);
+  }
+}
+
+.page-loading {
+  background-color:rgba(17,49,90,0.3);
+  width:100vw;
+  height:100vh;
+  position:fixed;
+  z-index:9991;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  animation-fill-mode: both;
+}
+
+.done {
+  animation-name: fadeOutLoad;
+  animation-duration: 0.3s;
+  visibility: hidden;
+}
+
+.preload {
+  animation-name: fadeInLoad;
+  animation-duration: 0.5s;
+}
+
+
+.done ul {
+  animation-duration: 0.4s;
+  animation-name: fadeOutLoad;
+  animation-fill-mode: both;
+}
+
+.page-loading ul {
+  list-style: none;
+  padding:0;
+  margin:0;
+  margin-top: -20px;
+  width:40px;
+  height:40px;
+}
+.page-loading ul li {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  position: absolute;
+  transform: scale(0.5);
+  opacity: 0;
+  animation: fx 2000ms ease infinite 0ms;
+}
+.page-loading ul li:nth-child(1) {
+  border: solid 1px #FFF;
+}
+.page-loading ul li:nth-child(2) {
+  animation: fx 2000ms ease infinite 300ms;
+  border: solid 1px #FFF;
+}
+.page-loading ul li:nth-child(3) {
+  animation: fx 2000ms ease infinite 600ms;
+  border: solid 1px #FFF;
+}
